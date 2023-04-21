@@ -7,38 +7,10 @@ namespace IterationStatements
     {
         static void Main(string[] args)
         {
-            var numbers = new List<int>();
-
-            var myNumber = 0;
-
-            do
+            for (int i = 0; i < 16; i++)
             {
-                myNumber++;
-                numbers.Add(myNumber);
-
-            } while (myNumber < 300);
-
-            while (myNumber < 200)
-            {
-                myNumber++;
-
-                numbers.Add(myNumber);
-            }
-            Console.WriteLine("Increases");
-
-            foreach (var item in numbers)
-            {
-                Console.WriteLine($"{item}");
-            }
-
-            Console.WriteLine("");
-            Console.WriteLine("Decrease");
-
-            for (int i = 199; i <= numbers.Count && i >= 0; i--) 
-            {
-                Console.WriteLine($"{numbers[i]}");
+                Console.WriteLine($"{i}");
             }
         }
     }
 }
-
